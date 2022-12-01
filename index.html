@@ -4,45 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cat Shop Lucky</title>
-    <link href="./assets/style.css" rel="stylesheet">
-    <link  href="./img/" rel="icon">
+    <title>Lucky Catshop</title>
+    <link href="./assets/styles.css" rel="stylesheet">
+    <link  href="./img/catshop.png" rel="icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <img class="logo" src="./img/logo_ce.png">
+        <img class="logo" src="./img/catshop.png">
             <div class="wrapper">
             
                 <nav>
-                    <div class="container-flex">
+                    <input type="checkbox" id="checkbox_toggle" />
+                    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                    <div class="container-flex" id="flex">
                         <ul class="nav__links bg-sidebar">
                             <li><a href="#">Home</a></li>
-                            <li><a href="#">Shop</a></li>
-                            <li><a href="#">Service</a></li>
+                            <li><a href="shop.html">Shop</a></li>
+                            <li><a href="service.html">Service</a></li>
                             <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
                         </ul>
                     </div>
                  </nav>
             </div>
 
-            <a href="#">Contact Us</a>
+          
+
 
     </header>
     <section class="rolltext">
         <div class="content-roll"> 
-            <marquee><b>CATSHOP LUCKY</b> – PET GROOMING SERVICES – Melayani Jasa Grooming Kucing – Grooming Panggilan – Memanjakan & Memandikan Peliharaan Kesayangan Kamu – Merawat Kucing Kesayangan </marquee>
+            <marquee Scrollamount=10><b>CATSHOP LUCKY</b> – PET GROOMING SERVICES – Melayani Jasa Grooming Kucing – Grooming Panggilan – Memanjakan & Memandikan Peliharaan Kesayangan Kamu – Merawat Kucing Kesayangan </marquee>
         </div>
     </section>
 
     <section class="main">
         <div class="row">
             <div class="content">
-                <img src="./img/logo_ce.png">
-                <h2>Belanja Online Kebutuhan Hewan Peliharaan HANYA disini !</h2> 
+                <img src="./img/catshop.png">
+                <h2>Belanja Online Kebutuhan Kucing Peliharaan HANYA disini !</h2> 
                 <p>Menyediakan brand <b>lokal</b> dan <b>Internasional</b> yang terus bertambah untuk CatLovers di seluruh Indonesia.
                  Kami memiliki <b>lebih</b> dari <b>5.000</b> produk yg dapat memenuhi kebutuhan kucing peliharaan kesayangan Anda dengan menawarkan berbagai produk pilihan dari berbagai kategori, mulai dari makanan, vitamin dan obat-obatan, mainan, aksesoris, baju, kandang, dan masih banyak lagi.</p>     
+                <a href="shop.html"><u>BUY NOW!!!</u></a> 
             </div>
         </div>
     </section>
@@ -53,16 +58,11 @@
                 <h2>Services</h2>
                 <h3>Peliharaan, Penitipan Kucing dan Jasa Grooming</h3>
                 <p><b>Anda ingin pergi keluar kota?</b> Percayakan Kucing anda kepada kami Jasa Pemeliharaan dan penitipan kucing.</p>
+                <img src="./img/nitip.jpg">
+                <br>
                 <p><b>Kami Juga menyediakan Jasa Grooming Kucing Panggilan. </b><br>Kami berikan perawatan terbaik di tempat Kamu,Kamu & Anabul-mu bisa #diRumahAja!</p>
-            </div>
-        </div>
+                <img src="./img/grooming.jpeg">
 
-    </section>
-
-    <section class="list">
-        <div class="row">
-            <div class="content">
-    
             </div>
         </div>
 
@@ -78,5 +78,5 @@
         </div>
     </footer>
 </body>
-<script src="/assets/script.js"></script>
+<script src="./assets/script.js"></script>
 </html>

@@ -4,32 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cat Shop Lucky - About</title>
-    <link href="./assets/style.css" rel="stylesheet">
-    <link  href="./img/" rel="icon">
+    <title>Lucky Catshop</title>
+    <link href="./assets/styles.css" rel="stylesheet">
+    <link  href="./img/catshop.png" rel="icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <img class="logo" src="./img/logo_ce.png">
+        <img class="logo" src="./img/catshop.png">
             <div class="wrapper">
             
                 <nav>
-                    <div class="container-flex">
+                    <input type="checkbox" id="checkbox_toggle" />
+                    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                    <div class="container-flex" id="flex">
                         <ul class="nav__links bg-sidebar">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Shop</a></li>
-                            <li><a href="#">Service</a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="shop.html">Shop</a></li>
+                            <li><a href="service.html">Service</a></li>
                             <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
                         </ul>
                     </div>
                  </nav>
             </div>
 
-            <a href="#">Contact Us</a>
+          
+
 
     </header>
+    
     <section class="rolltext">
         <div class="content-roll"> 
             <marquee><b>CATSHOP LUCKY</b> – PET GROOMING SERVICES – Melayani Jasa Grooming Kucing – Grooming Panggilan – Memanjakan & Memandikan Peliharaan Kesayangan Kamu – Merawat Kucing Kesayangan </marquee>
@@ -39,8 +44,23 @@
     <section class="main-about">
         <div class="row">
             <div class="content">
-                <p>Bisnis kami dimulai pada tahun 2022, Kami berfokus di industri hewan peliharaan dengan fokus produk dan layanan kucing. Kami memiliki keinginan besar untuk menjadi bisnis kami menjadi yang terbaik dengan kualitas dan layananannya.</p>
-                <p>Menjadi Toko Kucing yang maju dan nomer 1 di kota cirebon adalah tujuan kami atau lebih dari itu menjadi toko kucing terbesar dan terkenal diseluruh Indonesia.</p>
+                <table>
+                    <th>
+                        <tr>
+                            <td>
+                                <img src="./img/kucing.jpg">
+                            </td>
+                            <td>
+                                <p>Bisnis kami dimulai pada tahun 2022, Kami berfokus di industri hewan peliharaan dengan fokus produk dan layanan kucing. Kami memiliki keinginan besar untuk menjadi bisnis kami menjadi yang terbaik dengan kualitas dan layananannya.</p>
+                                <p>Menjadi Toko Kucing yang maju dan nomer 1 di Kota Cirebon adalah tujuan kami atau lebih dari itu menjadi toko kucing terbesar dan terkenal diseluruh Indonesia.</p>
+                            </td>
+                        </tr>
+    
+    
+                    </th>
+                </table>
+
+
             </div>
         </div>
 
@@ -52,7 +72,7 @@
 
         </div>
         <div class="container">
-            &copy; Copyright  <strong>Lucky Saputra <script>Date.now('Y')</script></strong>
+            &copy; Copyright  <strong>Lucky Saputra</strong>
         </div>
     </footer>
 </body>
