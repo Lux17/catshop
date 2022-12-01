@@ -2,6 +2,7 @@ body{
     margin-left: 3px;
     margin-right: 3px;
 }
+
 li, a, button{
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -9,9 +10,11 @@ li, a, button{
     color: #0088a9;
     text-decoration: none;
 } 
+
 .nav__links{
     list-style: none;
 }
+
 header{
     display: flex;
     justify-content: space-between;
@@ -36,7 +39,7 @@ header{
 .nav__links li a:hover{
     color: #9fceda;
 }
-  
+
 button{
     padding: 9px 25px;
     background-color: rgba(0,136,169,1);
@@ -98,9 +101,9 @@ marquee{
 
 .service{
     height: 700px;
-    /* background-image: url('../img/bg3.1.png'); */
     margin-bottom: 20px;
 }
+
 footer{
     padding-top: 30px;
     text-align: center;
@@ -109,6 +112,7 @@ footer{
     margin-left: 0px;
     margin-right: 0px;
 }
+
 .container{
     color: white;
     text-align: center;
@@ -117,30 +121,27 @@ footer{
 
 
 
-    input[type=checkbox]{
+input[type=checkbox]{
+    display: none; 
+}
+    
 
-        display: none;
-        
-    }
-    
-    /*HAMBURGER MENU*/
-    
-    .hamburger {
-    
+/*HAMBURGER MENU*/
+
+.hamburger {
     display: none;
-    
     font-size: 24px;
-    
     user-select: none;
-    }    
+}   
+
 .card {
     height: 120px;
     position: relative;
     padding: 20px;
     box-sizing: border-box;
     margin-bottom: 20px;
-    }    
-    
+}    
+
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(7, 7, 7, 0.2);
 }
@@ -173,55 +174,36 @@ table{
 .main-shop{
     height: 620px;
 }
-    @media (max-width: 768px) {
 
-        .nav__links{
-        
+@media (max-width: 768px) {
+
+    .nav__links{
         display:none;
-        
         position: absolute;
-        
         background-color:teal;
-        
         right: 0;
-        
         left: 0;
-        
         text-align: center;
-        
         padding: 16px 0;
-        
-        }
-        
-        .nav__links li:hover {
-        
+    }
+
+    .nav__links li:hover {
         display: inline-block;
-        
         background-color:#4c9e9e;
-        
         transition: 0.3s ease;
-        
-        }
-        
-        .nav__links li + li {
-        
+    }
+
+
+    .nav__links li + li {
         margin-top: 12px;
-        
-        }
-        
-        #checkbox_toggle:checked ~ .nav__links{
-        
+    }
+            
+    #checkbox_toggle:checked ~ .nav__links{
         display: block;
-        
-        }
-        
-        .hamburger {
-        
+    }
+            
+    .hamburger {
         display: block;
-        
-        }
-        
-    
-    
-        
-        }
+    }
+
+}
