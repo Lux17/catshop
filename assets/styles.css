@@ -88,6 +88,7 @@ marquee{
     
 }
 
+
 /* section main */
 .main{
     height: 700px;
@@ -112,27 +113,17 @@ footer{
     margin-left: 0px;
     margin-right: 0px;
 }
+/* 
+.footer-top{
+    height: 100px;
+    background-color:#0088a9;
+} */
 
 .container{
     color: white;
     text-align: center;
 }
 
-
-
-
-input[type=checkbox]{
-    display: none; 
-}
-    
-
-/*HAMBURGER MENU*/
-
-.hamburger {
-    display: none;
-    font-size: 24px;
-    user-select: none;
-}   
 
 .card {
     height: 120px;
@@ -153,14 +144,17 @@ input[type=checkbox]{
     height: 45px;
     width: 45px;
 }
-
+.main-service{
+    overflow-x: auto ;
+}
 .main-service img{
     height: 200px;
-    width: 400px;
+    width: 300px;
 }
 
 table{
     text-align: center;
+   
 }
 
 .main-contact{
@@ -169,41 +163,92 @@ table{
 
 .main-about{
     height: 620px;
+    overflow-x: auto;
 }
 
 .main-shop{
     height: 620px;
 }
 
-@media (max-width: 768px) {
+.main-about img{
+    width: 700px;
+}
 
-    .nav__links{
-        display:none;
-        position: absolute;
-        background-color:teal;
-        right: 0;
-        left: 0;
-        text-align: center;
-        padding: 16px 0;
+.burger {
+    display: none;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(226, 226, 226);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1024px) {
+    .nav__links {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    
+    .nav__links {
+        position: fixed;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #5D4954;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        z-index: 1;
+    }
+    
+    .nav__links li {
+        opacity: 0;
     }
 
-    .nav__links li:hover {
-        display: inline-block;
-        background-color:#4c9e9e;
-        transition: 0.3s ease;
+    marquee{
+        display: none;
     }
-
-
-    .nav__links li + li {
-        margin-top: 12px;
-    }
-            
-    #checkbox_toggle:checked ~ .nav__links{
+    
+    .burger {
         display: block;
+        cursor: pointer;
     }
-            
-    .hamburger {
-        display: block;
-    }
+}
 
+.nav-active {
+        transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
 }
